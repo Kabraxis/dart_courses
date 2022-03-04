@@ -1,5 +1,3 @@
-
-
 void main() {
   print('Hello, World!');
   var name = 'Kabraxis';
@@ -10,6 +8,4 @@ void main() {
   print('Hi, my name is: $name and my last name is $lastName.');
   print('The earth takes $eclipseDays days to obit the sun.');
   print('Fun-fact: An opinion without "Pi" - which is $pi - is just an onion.');
-
-
 }
