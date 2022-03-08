@@ -20,4 +20,14 @@ main() {
 
   amount = 'Ducktails';
   print('but also $amount');
+
+  // data conversion
+
+  // String -> int
+  var one = '1';
+  assert(one == 1);
+
+  // String -> double
+  var onePointOne = double.parse('1.1');
+  assert(onePointOne == 1.1);
 }
