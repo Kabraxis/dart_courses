@@ -1,6 +1,15 @@
 import "dart:math";
+import "dart:io";
 
 void main() {
+
+  // User input
+  print("What is your name?:");
+
+  // Standard input
+  String? userName = stdin.readLineSync();
+  print("Hello ${userName}");
+
 
   // Boolean
   print(5 > 3); // true
