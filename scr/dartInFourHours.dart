@@ -1,4 +1,15 @@
+import "dart:math";
+
 void main() {
+
+  // Boolean
+  print(5 > 3); // true
+
+  // Math
+  // Minimum value
+  print(min(2, 9));
+  // Square root
+  print(sqrt(36));
 
   // Indexes
   String greeting = "Hello";
