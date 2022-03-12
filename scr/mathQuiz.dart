@@ -43,7 +43,3 @@ void main() {
 
   print("You got ${score / questions.length * 100}%");
 }
-/*
-Eine Classe ist nichts anderes als eine selbst definierte komplexe Variable.
-
- */
