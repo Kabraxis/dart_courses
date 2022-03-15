@@ -4,7 +4,7 @@ import "dart:io";
 String prompt(String promptText) {
   print(promptText);
   String? answer = stdin.readLineSync();
-  while (answer == null || answer.trim().isEmpty || answer.isEmpty) {
+  while (answer == null || answer.trim().isEmpty) {
     print(promptText);
   }
   return answer;
@@ -14,7 +14,7 @@ double promptDouble() {
   print("Enter a number: ");
   double myNum;
   String? input = stdin.readLineSync();
-  while (input == null || input.trim().isEmpty || input.isEmpty) {
+  while (input == null || input.trim().isEmpty) {
     print("Enter a number: ");
     input = stdin.readLineSync();
   }
