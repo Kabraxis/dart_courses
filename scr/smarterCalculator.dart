@@ -4,12 +4,22 @@ import "dart:io";
 String prompt(String promptText) {
   print(promptText);
   String? answer = stdin.readLineSync();
-  return answer!;
+  while (answer == null || answer.trim().isEmpty || answer.isEmpty) {
+    print(promptText);
+  }
+  return answer;
 }
 
 double promptDouble() {
   print("Enter a number: ");
-  double myNum = double.parse(stdin.readLineSync()!);
+  double myNum;
+  String? input = stdin.readLineSync();
+  while (input == null || input.trim().isEmpty || input.isEmpty) {
+    print("Enter a number: ");
+    input = stdin.readLineSync();
+  }
+      myNum = double.parse(input);
+
   return myNum;
 }
 
